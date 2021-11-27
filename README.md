@@ -1,4 +1,6 @@
 # fmi-hass-notify
+edited: 2021-11-27
+
 This is documentation for setting up FMI (Ilmatieteenlaitos) integration and mobile notifications to HASS.
 
     OS Version:               Home Assistant OS 6.6
