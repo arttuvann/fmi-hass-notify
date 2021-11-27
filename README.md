@@ -78,8 +78,8 @@ Adding also the timestamp is beneficial for making sure you're reading the right
 
 Mobile notification can be created with the desired execution time and action: 
 
-Action type: Call service
-Service: Notifications: Send a notification via... (your mobile device id here)
+    Action type: Call service
+    Service: Notifications: Send a notification via... (your mobile device id here)
 
 Click on the three dots to edit YAML directly (templates are not supported in visual editor):
 
