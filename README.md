@@ -86,8 +86,8 @@ Click on the three dots to edit YAML directly (templates are not supported in vi
 ```yaml
 service: notify.mobile_<check your own HASS mobile device id>
 data:
-  message: '{{ states(''sensor.mukkula_morning_weather'') }}'
-  title: Aamun lämpötilaennuste
+  message: '{{ states(''sensor.my_morning_weather'') }}'
+  title: Morning forecast
 ```
 
 There you have it. Enjoy your automated weather notifications based on FMI data :)
