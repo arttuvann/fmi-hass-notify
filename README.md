@@ -1,8 +1,8 @@
 # fmi-hass-notify
 This is documentation for setting up FMI (Ilmatieteenlaitos) integration and mobile notifications to HASS.
 
-  OS Version:               Home Assistant OS 6.6
-  Home Assistant Core:      2021.11.5
+    OS Version:               Home Assistant OS 6.6
+    Home Assistant Core:      2021.11.5
 
 Use your preferred method such as Terminal & SSH login to upload files from repository to HASS.
 
