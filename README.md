@@ -1,5 +1,5 @@
 # fmi-hass-notify
-Documentation project for setting up FMI (Ilmatieteenlaitos) integration and mobile notifications to HASS.
+This is documentation for setting up FMI (Ilmatieteenlaitos) integration and mobile notifications to HASS.
 
   OS Version:               Home Assistant OS 6.6
   Home Assistant Core:      2021.11.5
@@ -70,6 +70,24 @@ forecast:
 
 and you could access the second item's attributes with the template
 
-    {{ state_attr('weather.<your location>', 'forecast')[1]['condition'] }}
+```yaml
+{{ state_attr('weather.<your location>', 'forecast')[1]['condition'] }}
+```
 
-Timestamp is beneficial for checking you're accessing the right hour data.
+Adding also the timestamp is beneficial for making sure you're reading the right hour's data.
+
+Mobile notification can be created with the desired execution time and action: 
+
+Action type: Call service
+Service: Notifications: Send a notification via... (your mobile device id here)
+
+Click on the three dots to edit YAML directly (templates are not supported in visual editor):
+
+```yaml
+service: notify.mobile_<check your own HASS mobile device id>
+data:
+  message: '{{ states(''sensor.mukkula_morning_weather'') }}'
+  title: Aamun lämpötilaennuste
+```
+
+There you have it. Enjoy your automated weather notifications based on FMI data :)
