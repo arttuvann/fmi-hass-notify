@@ -6,7 +6,7 @@ This is documentation for setting up FMI (Ilmatieteenlaitos) integration and mob
     OS Version:               Home Assistant OS 6.6
     Home Assistant Core:      2021.11.5
 
-Use your preferred method such as Terminal & SSH login to upload files from repository to HASS.
+Use your preferred method such as Terminal & SSH login to upload files from [fmi-hass-custom](https://github.com/anand-p-r/fmi-hass-custom|) repository to HASS. For example with secure copy:
 
 ```bash
 mkdir -p /config/custom_components/fmi
