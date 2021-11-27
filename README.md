@@ -70,7 +70,7 @@ forecast:
     ...etc
 ```
 
-and you could access the second item's attributes with the template
+and you could access the second item's condition attribute with the template
 
 ```yaml
 {{ state_attr('weather.<your location>', 'forecast')[1]['condition'] }}
